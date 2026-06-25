@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root{
-    --branco: #F5F5F5;
-    --cor-de-fundo: #081A33;
-    --fundo-senha: #A97C87;
-    --fundo-texto: #7E5A67;
-    --borda: #D9D9D9;
+    --branco: #FFF7FA;
+    --cor-de-fundo: #3A001B;
+    --fundo-senha: #731B45;
+    --fundo-texto: #9A2F63;
+    --borda: #FF9CC9;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -19,7 +19,13 @@
 
 body{
     color: var(--branco);
-    background: linear-gradient(180deg,#081A33,#13284A,#081A33);
+    background: linear-gradient(
+        180deg,
+        #3A001B 0%,
+        #5A1035 35%,
+        #7A1D50 70%,
+        #3A001B 100%
+    );
     font-family: var(--roboto);
 }
 
@@ -32,7 +38,8 @@ body{
 .titulo-principal{
     font-family: var(--roboto-mono);
     font-size: 32px;
-    color: #F3D8DE;
+    color: #FFC4DD;
+    text-shadow: 0 0 12px rgba(255,156,201,.45);
 }
 
 .titulo-secundario{
@@ -47,11 +54,11 @@ body{
 
 .conteudo-senha{
     margin-top: 80px;
-    background: var(--fundo-senha);
+    background: linear-gradient(145deg,#7A1D50,#9A2F63);
     padding: 24px;
     border: 2px solid var(--borda);
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(233,196,206,.35);
+    box-shadow: 0 0 25px rgba(255,156,201,.35);
 }
 
 #campo-senha{
@@ -68,18 +75,18 @@ body{
 }
 
 .parametro{
-    background: var(--fundo-texto);
+    background: linear-gradient(145deg,#6B1543,#8D285B);
     border: 2px solid var(--borda);
     margin-top: 32px;
     padding: 24px;
     border-radius: 12px;
-    box-shadow: 0 0 18px rgba(230,220,225,.2);
+    box-shadow: 0 0 20px rgba(255,156,201,.25);
 }
 
 .parametro-titulo{
     font-family: var(--roboto-mono);
     font-size: 28px;
-    color: #FFE7EC;
+    color: #FFD4E7;
 }
 
 .parametro-senha__titulo{
@@ -103,18 +110,20 @@ body{
 }
 
 .parametro-senha__botao{
-    background: #D8B6C1;
-    color: #081A33;
+    background: linear-gradient(145deg,#FF5CA8,#FF9CC9);
+    color: #4A0022;
     border: none;
     padding: 20px 24px;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 8px;
     transition: .3s;
+    box-shadow: 0 0 12px rgba(255,156,201,.45);
 }
 
 .parametro-senha__botao:hover{
-    background: #F0D4DD;
+    background: linear-gradient(145deg,#FF7DBA,#FFD1E7);
     transform: scale(1.05);
 }
 
@@ -134,11 +143,11 @@ label{
     width: 20px;
     height: 20px;
     cursor: pointer;
-    accent-color: #D8B6C1;
+    accent-color: #FF69B4;
 }
 
 .barra{
-    background: #53657F;
+    background: #5E2141;
     height: 30px;
     width: 100%;
     border-radius: 30px;
@@ -153,17 +162,17 @@ label{
 
 .fraca{
     width: 25%;
-    background: #7A2033;
+    background: #8B001F;
 }
 
 .media{
     width: 50%;
-    background: #C98FA1;
+    background: #E03A8A;
 }
 
 .forte{
     width: 100%;
-    background: #F5F5F5;
+    background: #FFB6D9;
 }
 
 .parametro-senha-textos{
@@ -171,11 +180,9 @@ label{
     justify-content: space-between;
 }
 
-/* Footer */
-
 .footer{
-    background: #061325;
-    color: #D8D8D8;
+    background: #240010;
+    color: #F7E3EC;
     text-align: center;
     padding: 25px 20px;
     margin-top: 40px;
@@ -188,7 +195,7 @@ label{
 }
 
 .footer strong{
-    color: #F0D4DD;
+    color: #FFB6D9;
 }
 
 .footer-links{
@@ -202,7 +209,7 @@ label{
 }
 
 .footer-links a:hover{
-    color: #F0D4DD;
+    color: #FF9CC9;
 }
 
 @media screen and (min-width:768px){
